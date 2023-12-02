@@ -7,7 +7,10 @@ export default {
   database_url: process.env.MONGODB_URL,
   env: process.env.NODE_ENV,
   auth_token: process.env.AUTH_TOKEN,
-  auth_token_expires_in: process.env.AUTH_TOKEN_EXPIRE_IN,
+  auth_token_expires_in: process.env.AUTH_TOKEN_EXPIRE,
   refresh_token: process.env.REFRESH_TOKEN,
-  refresh_token_expires_in : process.env.REFRESH_TOKEN_EEPIRE_IN
+  refresh_token_expires_in: process.env.REFRESH_TOKEN_EXPIRE,
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
 }
