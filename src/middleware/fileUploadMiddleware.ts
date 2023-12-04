@@ -2,6 +2,7 @@
 import { NextFunction, Request, Response } from 'express'
 import uploader from '../utilits/uploader'
 
+
 const fileUploadMiddleware = (
   req: Request,
   res: Response,
@@ -12,7 +13,7 @@ const fileUploadMiddleware = (
     errorMessage: 'Only .jpg, .jpeg and .png format allowed!',
     maxFileSize: 1024 * 1024 * 5, // 5MB
   })
-
+  // console.log(multerUploader)
   multerUploader.any()(req, res, (err: any) => {
     if (err) {
       console.log(err)

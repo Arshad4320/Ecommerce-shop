@@ -10,6 +10,8 @@ export const fileUpload = async (
   try {
     //@ts-ignore
     const file = req?.files as any
+
+    console.log(file);
     res.status(200).send({
       success: true,
       data: file[0]?.path,
